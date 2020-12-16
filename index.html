@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Machine Learning</h1>
+                    <h2>overview</h2>
+				</section>
+				<section>
+                    <section>
+                        <h2>Machine found cancer</h2>
+                        <img class="r-stretch" src="assets/ai-cancer.jpg">
+                        <p>A yellow box indicates where an artificial intelligence system found cancer hiding inside breast tissue, in an undated photo released by Northwestern University in Chicago, Jan. 1, 2020.</p>
+                    </section>
+                    <section>
+                        <h2>Machine found vechicle damage</h2>
+                        <img class="r-stretch" src="assets/vehicle-damage.png">                 
+                        <p>Image was taken from <a href="https://nanonets.com/blog/damage-inspection-machine-learning/">Nanonets</a></p>
+                    </section>
+                    <section>
+                        <h2>Deepfake</h2>
+                        <img class="r-stretch" src="assets/swap-face.jpeg">
+                        <p>Image was taken from open-source project on <a href="https://github.com/YuvalNirkin/face_swap">GitHub</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Machine painted the picture</h2>
+                        <img class="r-stretch" src="assets/ai-paint.jpg">
+                        <p>This photo provided by Christie's shows a portrait of Edmond de Belamy, a work of art created by artificial intelligence. Christie's/AP
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Machine composed the music</h2>
+                        <video data-autoplay src="assets/aiva.webm"></video>                        
+                    </section>
+				</section>
+				<section>
+                    <section>
+                        <h2>Data Analysis</h2>
+                        <img class="r-stretch" src="assets/analysis.jpg">
+                        <p>Machine learning helps to find patterns in data</p>
+                    </section>
+                    <section>                                        
+                        <blockquote>
+                            We are drowning in information and starving for knowledge
+                        </blockquote>
+                        <i>— John Naisbitt</i>
+                    </section>
+                </section>
+				<section>
+                    <h2>Machine Learning Defined</h2>
+                    <p>The field pioneer Tom Mitchell wrote in his Maching Learning book:</p>
+                    <blockquote>
+                        A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if it's performance at tasks in T, as measured by P, improves with experience E.
+                    </blockquote>
+                </section>
+                <section>
+                    <section>
+                        <h2>Traditional programming</h2>
+                        <img class="r-stretch" src="assets/rect1071.png">
+                        <p>Results by program with data</p>
+                    </section>
+                    <section>
+                        <h2>Traditional programming</h2>
+                        <img class="r-stretch" src="assets/rect107231.png">
+                        <p>Results by program with data</p>
+                    </section>
+                    <section>
+                        <h2>Machine Learning</h2>
+                        <img class="r-stretch" src="assets/rect10721.png">
+                        <p>Program by results and data</p>
+                    </section>
+                    <section>
+                        <h2>Machine Learning</h2>
+                        <img class="r-stretch" src="assets/rect107321.png">
+                        <p>Program by results and data</p>
+                    </section>
+				</section>
+				<section>
+                    <h2>Machine Learning</h2>
+                    <img class="r-stretch" src="assets/rect1127.png">
+                    <p>The machine trying different rules</p>
+                </section>
+                <section>
+                    <h2>Rules</h2>
+                    <img class="r-stretch" src="assets/path166.png">
+                    <p>? ? ?</p>
+                </section>
+                <section>
+                    <section>
+                        <h2>Supervised Learning</h2>
+                        <img class="r-stretch" src="assets/teacher.jpg">      
+                        <p> In supervised learning, the goal is to learn the mapping (the rules) between a set of inputs and outputs. </p>
+                    </section>
+                    <section>
+                        <h2>Forest fires</h2>
+                        <img class="r-stretch" src="assets/forest.jpeg">      
+                        <p>Forests are highly flammable in hot weather</p>
+                    </section>
+                    <section>
+                        <h2>Mapping</h2>
+                        <table>
+                            <tr>                                
+                                <td>temperature</td>
+                                <td>fires</td>
+                                <td>date</td>
+                            </tr>
+                            <tr>                                
+                                <td>17</td>
+                                <td>0</td>
+                                <td>03/2019</td>
+                            </tr>
+                            <tr>                                
+                                <td>22</td>
+                                <td>0</td>
+                                <td>04/2019</td>
+                            </tr>
+                            <tr>                                
+                                <td>27</td>
+                                <td>1</td>
+                                <td>05/2019</td>
+                            </tr>
+                            <tr>                                
+                                <td>32</td>
+                                <td>5</td>
+                                <td>06/2019</td>
+                            </tr>
+                            <tr>                                
+                                <td>35</td>
+                                <td>12</td>
+                                <td>07/2019</td>
+                            </tr>
+                            <tr>                                
+                                <td>38</td>
+                                <td>25</td>
+                                <td>08/2019</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Data is a new oil</h2>
+                        <img class="r-stretch" src="assets/g30799.png">                              
+                    </section>
+                    <section>
+                        <h2>classification</h2>
+                        <img class="r-stretch" src="assets/rect11071.png">      
+                        <p>Input will be low, medium, high</p>
+                    </section>
+                    <section>
+                        <h2>Separating data points with a line</h2>
+                        <img class="r-stretch" src="assets/rect1624.png">                              
+                    </section>
+                    <section>
+                        <h2>classification model</h2>
+                        <img class="r-stretch" src="assets/rect1624-0.png">                              
+                    </section>
+                    <section>
+                        <h2>A popular algorithms</h2>
+                        <ul>                            
+                            <li>Logistic regression and multinomial regression</li>
+                            <li>Artificial Neural networks</li>
+                            <li>Decision tree, forest, and jungles</li>
+                            <li>SVM (support vector machine)</li>
+                            <li>Perceptron methods</li>
+                            <li>Bayesian classifiers (e.g., Naive Bayes)</li>
+                            <li>Nearest neighbor methods (e.g., k-NN or k-Nearest Neighbors)</li>                            
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Regression</h2>
+                        <img class="r-stretch" src="assets/rect2071.png">      
+                        <p>Input will be scalar</p>
+                    </section>
+                    <section>
+                        <h2>Regression model</h2>
+                        <img class="r-stretch" src="assets/text1661-2.png">                              
+                    </section>   
+                    <section>
+                        <h2>A popular algorithms</h2>
+                        <ul>  
+                            <li>Simple and multiple linear regression</li>
+                            <li>Decision tree or forest regression</li>
+                            <li>Artificial Neural networks</li>
+                            <li>Ordinal regression</li>
+                            <li>Poisson regression</li>
+                            <li>Nearest neighbor methods (e.g., k-NN or k-Nearest Neighbors)</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Unsupervised Learning</h2>
+                        <img class="r-stretch" src="assets/theme-3.jpg">                        
+                    </section>
+                    <section>                                        
+                        <h2>Unsupervised Learning</h2>
+                        <img class="r-stretch" src="assets/cubes.jpg">                              
+                        <p>Sorting by color (one is properties of cubes)</p>
+                    </section>                    
+                    <section>                                        
+                        <h2>Unsupervised Learning</h2>
+                        <img class="r-stretch" src="assets/tsne-mnist.png">                              
+                        <p>image from <a href="https://nlml.github.io/in-raw-numpy/in-raw-numpy-t-sne/">nlml.github.io</a></p>
+                    </section>  
+                    <section>                                        
+                        <h2>clustering</h2>
+                        <img class="r-stretch" src="assets/clustering.png">                              
+                        <p>image from <a href="https://i.stack.imgur.com/cIDB3.png">https://i.stack.imgur.com/cIDB3.png</a></p>
+                    </section>  
+                    <section>                                        
+                        <h2>Association</h2>
+                        <img class="r-stretch" src="assets/rect3052.png">                                                      
+                    </section> 
+                    <section>                                        
+                        <h2>Anomaly Detection</h2>
+                        <img class="r-stretch" src="assets/path850-3-3.png">                                                      
+                    </section> 
+                    <section>                                        
+                        <h2>Dimensionality reduction</h2>
+                        <img class="r-stretch" src="assets/rect74.png">                                                      
+                    </section> 
+                    <section>
+                        <h2>A popular algorithms</h2>
+                        <ul>  
+                            <li>Clustering:</li>
+                            <ul>
+                                <li>K-means clustering</li>
+                                <li>Hierarchical clustering</li>
+                            </ul>
+                            <li>Anomaly detection:</li>
+                            <ul>
+                                <li>Support vector machine (one class)</li>
+                                <li>PCA (Principle component analysis)</li>
+                            </ul>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Semi-supervised learning</h2>
+                        <img class="r-stretch" src="assets/steacher.jpg">                        
+                    </section>
+                    <section>
+                        <h2>Generative Adversarial Networks</h2>
+                        <img class="r-stretch" src="assets/rect3397.png">                        
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Reinforcement Learning</h2>
+                        <img class="r-stretch" src="assets/plays.png">                        
+                    </section>
+                    <section>
+                        <h2>Reinforcement Learning</h2>
+                        <img class="r-stretch" src="assets/path5100.png">                        
+                    </section>   
+                </section>       
+                <section>
+                    <section>                    
+                        <img class="r-stretch" src="assets/ocv.png">                              
+                    </section>
+                    <section>
+                        <h2>application areas include</h2>
+                        <ul>  
+                            <li>2D and 3D feature toolkits</li>
+                            <li>Egomotion estimation</li>
+                            <li>Facial recognition system</li>
+                            <li>Gesture recognition</li>
+                            <li>Human–computer interaction (HCI)</li>                            
+                            <li>Motion understanding</li>
+                            <li>Object detection</li>
+                            <li>Segmentation and recognition</li>                            
+                            <li>Structure from motion (SFM)</li>
+                            <li>Motion tracking</li>                            
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>OpenCV machine learning</h2>
+                        <ul>  
+                            <li>Boosting</li>
+                            <li>Decision tree learning</li>
+                            <li>Gradient boosting trees</li>
+                            <li>Expectation-maximization algorithm</li>
+                            <li>k-nearest neighbor algorithm</li>
+                            <li>Naive Bayes classifier</li>
+                            <li>Artificial neural networks</li>
+                            <li>Random forest</li>
+                            <li>Support vector machine (SVM)</li>
+                            <li>Deep neural networks (DNN)</li>
+                        </ul>
+                    </section>       
+                    <section>
+                        <h2>Face detection</h2>
+                        <img class="r-stretch" src="assets/image34.png">                        
+                    </section>
+                    <section>
+                        <h2>Capture video from webcam<h2>
+                        <pre><code data-trim data-noescape>
+                        let video = 
+                        document.querySelector('#videoInput');
+                        navigator.mediaDevices.getUserMedia(
+                          { video: true, audio: false }
+                        )
+                        .then(function(stream) {
+                            video.srcObject = stream;
+                            video.play();
+                        })                        
+                        </code></pre>
+                    </section>
+                    <section>                        
+                        <img class="r-stretch" src="assets/code.png">   
+                    </section>
+                    <section>
+                        <h2>I saw you somewhere!<h2>
+                        <pre><code data-trim data-noescape style="font-size:26px;">
+                            let classifier = new cv.CascadeClassifier();
+                        </code></pre>
+                        <pre><code data-trim data-noescape style="font-size:26px;">
+                            classifier.load('haarcascade_frontalface_default.xml');
+                        </code></pre>
+                        <p style="font-size: 22px;">Supervised ML and classification</p>
+                    </section>
+                </section>
+				<section>
+                    <h1>The End</h1>
+                    <p> Thanks for attention!</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				controls: true,
+				controlsLayout: 'bottom-right',
+				controlsBackArrows: 'faded',
+				progress: true,
+				center: true,
+				autoAnimate: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,201 @@
+What's up, Alex here and I want to talking about machine learning.
+This is a very big topic and it will be just an overview
+It's very impressive how a machine can find cancer hiding inside breast tissue or items in need of repair, swap face we know as deepfake, paint, compose a music depending on our preferences. And this isn't the whole list.
+It's just incredible!
+Machine learning is a branch of artificial intelligence, a science that granted new abilities.
+But how does it really work under the hood?
+Let's try to figure it out from simple basics.
+A large amount of data has been collected recently and this data is useless unless we analyse it. Analysis of the data will reveal the patterns hidden within. Machine learning helps to find patterns of any complexity.
+[slide]
+It is very important to see the difference between information and knowledge and John Naisbitt put it well:
+We are drowning in information and starving for knowledge.
+[slide]
+So what is maching learning?
+The field pioneer Tom Mitchell in 1997 defined machine learning is
+A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if it's performance at tasks in T, as measured by P, improves with experience E.
+And this defination is often quoted and widely accepted.
+[slide]
+Let's take a look at two examples.
+Traditional programming combined human created rules in program with data to create answers - result of program. 
+[slide]
+For example, we have a program that finds the function values and the x values at the input and we get the result at the output. Our rule is Y equal 2x - 1 and our data is 1,2,3. The result is the function values.
+[slide]
+Machine learning uses data and desired results to discover the rules and patterns.
+[slide]
+For example, our data is 1,2,3 and our desired results is 1, 3, 5. And we have the predictable function y = 2x - 1 at the output.
+[slide]
+To learn the rules governing a phenomenon, machines have to go through a learning process, trying different rules and learning from how well they perform.
+[slide]
+It's fair to ask the question: where does the machine get different rules from?
+There are many approaches that can be taken when conducting Machine Learning. 
+In machine learning, there is a theorem called “no free lunch.” In short, it states that no single algorithm works for all problems.
+Also, they are usually grouped into the areas listed below.
+
+(supervised learning)
+
+In supervised learning, the goal is to learn the mapping between a set of inputs and outputs.
+[slide]
+For example, forest fires. We have data on temperatures and the number of forest fires.
+[slide]
+The goal in supervised learning would be to learn the mapping that describes the relationship between temperature and number of forest fires.
+Example labelled data is provided of past input and output pairs during the learning process to teach the model how it should behave. For the our example, new inputs can then be fed in of forecast temperature and the Machine learning algorithm will then output a future prediction for the number of forest fires.
+The machine can adapt to new inputs and make predictions. In training, we want to maximise generalization, but if the model is over-trained, we cause over-fitting to the examples used and the model would be unable to adapt to new, previously unseen inputs.
+A side effect to be aware of in supervised learning that the supervision we provide introduces bias to the learning. The model can only be imitating exactly what it was shown, so it is very important to show it reliable, unbiased examples. Also, supervised learning usually requires a lot of data before it learns. Obtaining enough reliably labelled data is often the hardest and most expensive part of using supervised learning. 
+[slide]
+This is one of the reasons why data has become the new oil.
+
+This form of machine learning is very old and we might not even call it machine learning.
+We might call it curve fitting or regression.
+
+[slide]
+
+The output from a supervised Machine Learning model could be a category from a finite set [low, medium, high] for the number of forest fires:
+Input [temperature=38] -> Model -> Output = [fires=high]
+It’s deciding how to classify the input, and so is known as classification.
+
+[slide]
+Classification is used to group the similar data points into different sections in order to classify them. Machine Learning is used to find the rules that explain how to separate the different data points.
+There are multiple ways to discover the rules. They all focus on using data and answers to discover rules that linearly separate data points.
+[slide]
+Classification approaches try to find the best way to separate data points with a line.
+The lines drawn between classes are known as the decision boundaries. The entire area that is chosen to define a class is known as the decision surface. The decision surface defines that if a data point falls within its boundaries, it will be assigned a certain class.
+
+[slide]
+This is a very popular classification algorithms:
+Logistic regression and multinomial regression
+Artificial Neural networks
+Decision tree, forest, and jungles
+SVM (support vector machine)
+Perceptron methods
+Bayesian classifiers (e.g., Naive Bayes)
+Nearest neighbor methods (e.g., k-NN or k-Nearest Neighbors)
+
+[slide]
+Alternatively, the output could be a real-world scalar (output a number):
+Input [temperature=38] -> Model -> Output = [fires=25]
+It's known as regression.
+[slide]
+The difference between classification and regression is that regression outputs a number rather than a class. Therefore, regression is useful when predicting number based problems like stock market prices, the temperature for a given day and so on.
+[slide]
+This is a very popular regression algorithms:
+Simple and multiple linear regression
+Decision tree or forest regression
+Artificial Neural networks
+Ordinal regression
+Poisson regression
+Nearest neighbor methods (e.g., k-NN or k-Nearest Neighbors)
+
+Both the classification and regression supervised learning techniques can be extended to much more complex tasks.
+Also, there may be tasks with audio and video. 
+
+(Unsupervised Learning)
+
+There are no labelled example, only input data, but still possible to find many interesting and complex patterns hidden within data without any labels.
+[slide]
+For example, we were given colored cubes. We can sort them by color - one of the properties.
+Nobody taught us how to separate them, but by just looking at their features such as colour, we can associated and cluster them into their correct groups.
+[slide]
+Next example, an unsupervised learning algorithm (t-SNE) correctly clusters handwritten digits into groups, based only on their characteristics.
+Unsupervised learning can be harder than supervised learning, as the removal of supervision means the problem has become less defined. The algorithm has a less focused idea of what patterns to look for.
+By being unsupervised in a laissez-faire teaching style, you start from a clean slate with less bias and may even find a new, better way solve a problem. Therefore, this is why unsupervised learning is also known as knowledge discovery. Unsupervised learning is very useful when conducting exploratory data analysis.
+To find the interesting structures in unlabeled data, we use density estimation. The most common form of which is clustering. Among others, there is also dimensionality reduction, latent variable models and anomaly detection. More complex unsupervised techniques involve neural networks like Auto-encoders and Deep Belief Networks.
+
+[slide]
+(clustering)
+Unsupervised learning is mostly used for clustering. Clustering is the act of creating groups with differing characteristics. Clustering attempts to find various subgroups within a dataset. As this is unsupervised learning, we are not restricted to any set of labels and are free to choose how many clusters to create. This is both a blessing and a curse. Picking a model that has the correct number of clusters (complexity) has to be conducted via an empirical model selection process.
+
+[slide]
+(Association)
+Association rule learning is a type of unsupervised learning technique that checks for the dependency of one data item on another data item and maps accordingly so that it can be more profitable. It tries to find some interesting relations or associations among the variables of dataset. It is based on different rules to discover the interesting relations between variables in the database.
+
+[slide]
+(Anomaly Detection)
+The identification of rare or unusual items that differ from the majority of data. For example, your bank will use this to detect fraudulent activity on your card. Your normal spending habits will fall within a normal range of behaviors and values. But when someone tries to steal from you using your card the behavior will be different from your normal pattern. Anomaly detection uses unsupervised learning to separate and detect these strange occurrences.
+
+[slide]
+(Dimensionality reduction)
+Dimensionality reduction, or dimension reduction, is the transformation of data from a high-dimensional space into a low-dimensional space so that the low-dimensional representation retains some meaningful properties of the original data, ideally close to its intrinsic dimension.
+In our example with forest fires, the date may not play a role and it may confuse the algorithm.
+By using dimensionality reduction, only the most important features are identified and used. Principal Component Analysis (PCA) is a commonly used technique.
+
+[slide]
+This is a very popular unsupervised algorithms:
+Clustering:
+ K-means clustering
+ Hierarchical clustering
+Anomaly detection:
+ Support vector machine (one class)
+ PCA (Principle component analysis)
+ 
+[slide]
+(Semi-supervised learning)
+Semi-supervised learning is a mix between supervised and unsupervised approaches. The learning process isn’t closely supervised with example outputs for every single input, but we also don’t let the algorithm do its own thing and provide no form of feedback. Semi-supervised learning takes the middle road.
+By being able to mix together a small amount of labelled data with a much larger unlabeled dataset it reduces the burden of having enough labelled data. Therefore, it opens up many more problems to be solved with machine learning.
+
+[slide]
+Generative Adversarial Networks
+Generative Adversarial Networks have been a recent breakthrough with incredible results. GANs use two neural networks, a generator and discriminator. The generator generates output and the discriminator critiques it. By battling against each other they both become increasingly skilled.
+By using a network to both generate input and another one to generate outputs there is no need for us to provide explicit labels every single time and so it can be classed as semi-supervised.
+A perfect example is in medical scans, such as breast cancer scans. A trained expert is needed to label these which is time consuming and very expensive. Instead, an expert can label just a small set of breast cancer scans, and the semi-supervised algorithm would be able to leverage this small subset and apply it to a larger set of scans.
+
+(Reinforcement Learning)
+Reinforcement Learning. It is less common and much more complex, but it has generated incredible results. It doesn’t use labels as such, and instead uses rewards to learn.
+For example, when a dog follows a command, they praise it and give it tasty food. When dog doesn't follow the command, it gets scolded. The machine learns in a similar way.
+
+[slide]
+This is very similar to how we as humans also learn. Throughout our lives, we receive positive and negative signals and constantly learn from them. The chemicals in our brain are one of many ways we get these signals. When something good happens, the neurons in our brains provide a hit of positive neurotransmitters such as dopamine which makes us feel good and we become more likely to repeat that specific action. We don’t need constant supervision to learn like in supervised learning. By only giving the occasional reinforcement signals, we still learn very effectively.
+One of the most exciting parts of Reinforcement Learning is that is a first step away from training on static datasets, and instead of being able to use dynamic, noisy data-rich environments. This brings Machine Learning closer to a learning style used by humans. The world is simply our noisy, complex data-rich environment.
+Games are very popular in Reinforcement Learning research. They provide ideal data-rich environments. The scores in games are ideal reward signals to train reward-motivated behaviours. Additionally, time can be sped up in a simulated game environment to reduce overall training time.
+
+These were the main approaches in machine learning.
+
+[slide]
+Some popular models and algorithms are provided in the OpenCV Library by Intel.
+OpenCV is a library of programming functions mainly aimed at real-time computer vision.
+
+[slide]
+OpenCV's application areas include:
+2D and 3D feature toolkits
+Egomotion estimation
+Facial recognition system
+Gesture recognition
+Human–computer interaction (HCI)
+Mobile robotics
+Motion understanding
+Object detection
+Segmentation and recognition
+Stereopsis stereo vision: depth perception from 2 cameras
+Structure from motion (SFM)
+Motion tracking
+Augmented reality
+
+[slide]
+OpenCV includes a statistical machine learning library that contains:
+Boosting
+Decision tree learning
+Gradient boosting trees
+Expectation-maximization algorithm
+k-nearest neighbor algorithm
+Naive Bayes classifier
+Artificial neural networks
+Random forest
+Support vector machine (SVM)
+Deep neural networks (DNN)
+
+[slide]
+It is difficult to cover everything in one overview, especially the more different algorithms and neural networks, but it's easy to create face detection solution with this library and JavaScript.
+[slide]
+We need to include and start to use opencv.js in our html. 
+<script async src="https://docs.opencv.org/master/opencv.js" type="text/javascript"></script>
+[slide]
+Our solution is that we need to capture video from a webcam and send it to machine learning model from OpenCV library.
+[slide]
+In JS, we use WebRTC to get the media stream.
+[slide]
+And this code convert image to gray, load ML model, detect face and draw in canvas.
+[slide]
+I think, these two lines are very familiar! In this solution we used supervised machine learning with classification model.
+
+[slide]
+I hope, It was interesting. Thanks for attention. Bye.
+
